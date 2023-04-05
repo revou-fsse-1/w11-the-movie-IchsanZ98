@@ -6,52 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register Page</title>
   </head>
-  <body>
-    <div
-      class="inline-flex flex-col space-y-1 items-center justify-end px-96 pt-3 pb-40 bg-white"
-      style="width: 1440px; height: 960px"
-    >
-      <p class="text-7xl font-bold" style="width: 393px; height: 373px">
-        The<br />Movie<br />Watchlist
+  <body class="bg-white flex flex-col items-center pt-10">
+    <form class="flex flex-col items-start">
+      <h1 class="font-bold text-7xl leading-normal">
+        The <br />Movie <br />Watchlist
+      </h1>
+      <input
+        class="bg-gray-300 text-xl rounded-2xl w-96 h-14 mt-10 py-4 px-5 placeholder-black"
+        type="text"
+        placeholder="Username"
+        id="registerUsername"
+      />
+      <p id="usernameValidation" class="text-red-400 font-semibold"></p>
+      <input
+        class="bg-gray-300 text-xl rounded-2xl w-96 h-14 mt-4 py-4 px-5 placeholder-black"
+        type="text"
+        placeholder="Email"
+        id="registerEmail"
+      />
+      <p id="emailValidation" class="text-red-400 font-semibold"></p>
+      <input
+        class="bg-gray-300 text-xl rounded-2xl w-96 h-14 mt-4 py-4 px-5 placeholder-black"
+        type="password"
+        placeholder="Password"
+        id="registerPassword"
+      />
+      <p id="passwordValidation" class="text-red-400 font-semibold"></p>
+      <input
+        class="bg-gray-300 text-xl rounded-2xl w-96 h-14 mt-4 py-4 px-5 placeholder-black"
+        type="password"
+        placeholder="Confirm Password"
+        id="passwordConfirm"
+      />
+      <p id="confirmPasswordValidation" class="text-red-400 font-semibold"></p>
+      <button
+        id="registerBtn"
+        class="bg-blue-300 text-white font-semibold text-2xl rounded-2xl w-96 h-14 mt-10"
+      >
+        Register
+      </button>
+      <p class="my-4 text-sm">
+        Already have an account?
+        <a class="text-blue-500 font-semibold" href="./index.html">Login</a>.
       </p>
-      <div
-        class="inline-flex items-center justify-start py-4 pl-5 pr-72 bg-gray-300 rounded-2xl"
-        style="width: 393px; height: 52.79px"
-      >
-        <p class="text-xl">Username</p>
-      </div>
-      <div
-        class="inline-flex items-center justify-start pl-5 pr-56 pt-4 pb-3 bg-gray-300 rounded-2xl"
-        style="width: 393px; height: 52.79px"
-      >
-        <p class="flex-1 h-full text-xl">Email Address</p>
-      </div>
-      <div
-        class="inline-flex items-center justify-start py-4 pl-5 pr-72 bg-gray-300 rounded-2xl"
-        style="width: 393px; height: 52.79px"
-      >
-        <p class="text-xl">Password</p>
-      </div>
-      <div
-        class="inline-flex items-center justify-start pl-5 pr-52 pt-4 pb-2.5 bg-gray-300 rounded-2xl"
-        style="width: 393px; height: 52.79px"
-      >
-        <p class="flex-1 h-full text-xl">Confirm Password</p>
-      </div>
-      <div
-        class="inline-flex items-center justify-center px-36 py-4 bg-blue-400 rounded-2xl"
-        style="width: 393px; height: 52.79px"
-      >
-        <p
-          class="flex-1 h-full text-2xl font-semibold leading-tight text-white"
-        >
-          Register
-        </p>
-      </div>
-      <p class="text-base leading-3 text-gray-500">
-        Already have an account? , Login
-      </p>
-    </div>
+    </form>
+    <script src="./register.js"></script>
   </body>
 </html>
