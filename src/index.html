@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Responsive Tailwind CSS Page</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-blue-500">
+    <header class="bg-gray-800 py-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
+      >
+        <h1 class="text-white text-2xl font-bold mb-4 md:mb-0">My Website</h1>
+        <nav>
+          <ul class="flex flex-col md:flex-row">
+            <li class="my-2 md:my-0 md:ml-4">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li class="my-2 md:my-0 md:ml-4">
+              <a class="text-white" href="#">About</a>
+            </li>
+            <li class="my-2 md:my-0 md:ml-4">
+              <a class="text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container mx-auto my-8 px-4">
+      <h2 class="text-3xl font-bold mb-4">Welcome to My Website!</h2>
+      <p class="text-lg leading-7">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+        sollicitudin ligula euismod, finibus orci ac, luctus risus. Ut varius
+        lacus velit, eget ultrices nulla malesuada a. Nullam eu est sapien.
+        Quisque imperdiet vehicula libero vel iaculis. Sed maximus dui eu lorem
+        scelerisque, eu dignissim magna vestibulum. Etiam ac ultricies enim.
+      </p>
+    </div>
+    <footer class="bg-gray-800 py-4">
+      <div class="container mx-auto px-4">
+        <p class="text-white text-center">Copyright &copy; 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
