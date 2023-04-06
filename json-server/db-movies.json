@@ -29,6 +29,18 @@
       "password": "cihuy123",
       "email": "cihuy123@gmail.com",
       "id": 5
+    },
+    {
+      "username": "Kumar1",
+      "email": "test@example.com",
+      "password": "Qq111122",
+      "id": 6
+    },
+    {
+      "username": "Kumar11",
+      "email": "test1@example.com",
+      "password": "Aa123456",
+      "id": 7
     }
   ],
   "movies": [

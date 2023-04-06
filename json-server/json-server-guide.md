@@ -11,7 +11,7 @@ npm install -g json-server
 - Start the JSON Server: Once you have your JSON file ready, you can start the JSON server by running the following command in your terminal:
 
 ```js
-json-server --watch db-movies.json
+json-server --watch ./json-server/db-movies.json
 ```
 
 - Test the API: The JSON server should now be running at http://localhost:3000. You can test the API by making HTTP requests to this URL using a tool like cURL or a web browser. The JSON server will respond with the data from your JSON file.
