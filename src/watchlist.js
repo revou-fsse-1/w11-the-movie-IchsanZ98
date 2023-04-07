@@ -19,7 +19,9 @@ const loadWatchList = async () => {
     const movieHtml = `
       <a class="h-64 w-44 rounded-3xl relative overflow-hidden" href="#">
         <img class="w-full object-cover h-64 rounded-3xl" src="${image}" alt="${movie}">
-        <p class="text-transparent hover:text-black hover:bg-yellow-400/70 text-4xl font-bold absolute top-0 flex justify-center items-center w-full h-full" id="${id}" onclick="goToMovieDetail(this)">${rating * 10}%</p>
+        <p class="text-transparent hover:text-black hover:bg-yellow-400/70 text-4xl font-bold absolute top-0 flex justify-center items-center w-full h-full" id="${id}" onclick="goToMovieDetail(this)">⭐ ${
+      rating * 10
+    }%</p>
       </a>
     `;
     watchList.innerHTML += movieHtml;
