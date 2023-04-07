@@ -4,137 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Homepage - The Movie Watchlist</title>
   </head>
-  <body><div class="relative bg-white" style="width: 1440px; height: 960px;">
-    <div class="relative bg-gray-200" style="width: 1440px; height: 960px;">
-        <p class="absolute text-4xl font-bold" style="left: 80px; top: 29px;">The<br/>Movie<br/>Watchlist</p>
-        <div class="absolute bg-gray-300 rounded-full" style="width: 630px; height: 57px; left: 405px; top: 64px;"/>
-        <p class="absolute text-xl text-center" style="left: 590px; top: 81px;">🔍 Search a movie or a series</p>
+  <body class="md:bg-[#EBEAEA] pt-12">
+    <nav
+      class="flex flex-row justify-between items-center md:items-start px-20 gap-8 z-10"
+    >
+      <h1 class="font-bold text-3xl leading-normal font-[poppins]">
+        The <br />
+        Movie <br />
+        Watchlist
+      </h1>
+      <input
+        type="text"
+        class="bg-[#D9D9D9] hidden md:flex text-black text-center text-xl placeholder:text-black placeholder:font-medium placeholder:font-['Roboto'] w-full max-w-2xl h-14 rounded-3xl"
+        placeholder="🔍 Search a movie or a series"
+        id="searchInput"
+      />
+      <div class="flex gap-4">
+        <a href="./watchlist.html">
+          <button
+            class="bg-[#D9D9D9] invisible justify-center items-center text-xl font-bold rounded-[20px] w-48 h-14"
+          >
+            <img
+              class="h-5 mr-4"
+              src="../assets/🦆 icon _bookmark_.png"
+              alt="bookmark"
+            />
+            <p class="text-xl font-[poppins]">Watchlist</p>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <div
+      id="content"
+      class="md:flex-wrap md:justify-between pt-14 px-20 gap-x-5"
+    >
+      <section class="overflow-x-hidden col-start-1 col-end-2 mb-10 w-full">
+        <div
+          class="flex flex-wrap gap-5 py-4 scrollbar-hide"
+          id="watchlist"
+        ></div>
+      </section>
     </div>
-    <div class="relative absolute left-0 bottom-0" style="width: 1440px; height: 797px;">
-        <div class="w-48 h-72 absolute" style="left: 80px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 297px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 513px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 730px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 947px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 1163px; top: 20px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 80px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 297px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 513px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 730px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 947px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 1163px; top: 327px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 80px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 297px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 513px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 730px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 947px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 1163px; top: 634px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 80px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 297px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 513px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 730px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 947px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <div class="w-48 h-72 absolute" style="left: 1163px; top: 941px;">
-            <img class="flex items-start justify-start flex-1 h-full pl-3 pr-32 pt-5 pb-64 rounded-2xl" src="https://via.placeholder.com/197x287">
-                <p class="flex-1 h-full text-base font-bold text-white">⭐ 8.7</p>
-            </img>
-        </div>
-        <p class="absolute text-base font-bold leading-3" style="left: 639px; top: 1249px;">Built with ❤️ by Elshazlii </p>
-    </div>
-</div></body>
+    <script src="watchlist.js"></script>
+  </body>
 </html>
