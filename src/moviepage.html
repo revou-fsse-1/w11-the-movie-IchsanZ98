@@ -4,87 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Homepage - The Movie Watchlist</title>
   </head>
-  <body>
-    <div class="bg-white" style="width: 1440px; height: 960px">
-      <div class="relative bg-gray-200" style="width: 1440px; height: 960px">
-        <p class="absolute" style="left: 317px; top: 555px">⭐ 9.1/10</p>
-        <p class="absolute text-lg" style="left: 297px; top: 533px">
-          IMDB Rating
-        </p>
-        <p
-          class="w-44 h-32 absolute text-3xl font-bold"
-          style="left: 80px; top: 40px"
-        >
-          The<br />Movie<br />Watchlist
-        </p>
-        <div
-          class="absolute"
-          style="width: 630px; height: 57px; left: 405px; top: 46px"
-        >
-          <div
-            class="flex items-center justify-center py-4 px-48 bg-gray-300 rounded-full"
-            style="width: 630px; height: 57px"
+  <body class="md:bg-[#EBEAEA] pt-12">
+    <nav
+      class="flex flex-row justify-between items-center md:items-start px-20 gap-8 z-10"
+    >
+      <h1 class="font-bold text-3xl leading-normal font-[poppins]">
+        The <br />
+        Movie <br />
+        Watchlist
+      </h1>
+      <input
+        type="text"
+        class="bg-[#D9D9D9] hidden md:flex text-black text-center text-xl placeholder:text-black placeholder:font-medium placeholder:font-['Roboto'] w-full max-w-2xl h-14 rounded-3xl"
+        placeholder="🔍 Search a movie or a series"
+        id="searchInput"
+      />
+      <div class="flex gap-4">
+        <a href="./watchlist.html">
+          <button
+            class="bg-[#D9D9D9] invisible justify-center items-center text-xl font-bold rounded-[20px] w-48 h-14"
           >
-            <p class="flex-1 text-xl text-center">Search a movie or a series</p>
-          </div>
-        </div>
+            <img
+              class="h-5 mr-4"
+              src="../assets/🦆 icon _bookmark_.png"
+              alt="bookmark"
+            />
+            <p class="text-xl font-[poppins]">Watchlist</p>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <div class="px-20 mt-16 flex justify-between">
+      <h2
+        class="flex font-bold text-4xl leading-normal text-left"
+        id="movieTitle"
+      >
+        Loading
+      </h2>
+      <button
+        class="bg-[#D9D9D9] hidden md:flex justify-center items-center text-xl font-bold rounded-[20px] w-48 h-14"
+      >
         <img
-          class="w-48 h-72 absolute rounded-2xl"
-          style="left: 81px; top: 307px"
-          src="https://via.placeholder.com/196x291"
+          class="h-5 mr-4"
+          src="../assets/🦆 icon _bookmark_.png"
+          alt="bookmark"
         />
-        <img
-          class="absolute rounded-2xl"
-          style="width: 521px; height: 291px; left: 839px; top: 307px"
-          src="https://via.placeholder.com/521x291"
-        />
-        <p class="absolute text-4xl font-bold" style="left: 80px; top: 234px">
-          The Gray Man
-        </p>
+        <p class="text-base font-[poppins]">Add to Watchlist</p>
+      </button>
+    </div>
+    <div
+      class="pt-7 px-20 flex mb-10 gap-x-8"
+    >
+      <div
+        class="flex flex-col items-start justify-start md:grid md:grid-cols-2 gap-5 w-full order-2"
+      >
         <div
-          class="w-20 h-8 absolute border rounded-full border-black"
-          style="left: 297px; top: 326px"
-        />
-        <div
-          class="w-20 h-8 absolute border rounded-full border-black"
-          style="left: 405px; top: 326px"
-        />
-        <p class="absolute text-lg font-medium" style="left: 315px; top: 332px">
-          Action
-        </p>
-        <p class="absolute text-lg font-medium" style="left: 426px; top: 332px">
-          Sci-Fi
-        </p>
-        <p
-          class="absolute text-lg font-medium"
-          style="width: 413px; height: 107px; left: 297px; top: 378px"
-        >
-          A thief who steals corporate secrets through the use of dream-sharing
-          technology is given the inverse task of planting an idea into the mind
-          of a C.E.O., but his tragic past may doom the project and his team to
-          disaster.
-        </p>
-        <div
-          class="inline-flex items-end justify-start w-64 h-14 pl-0.5 pr-12 pt-3 absolute"
-          style="left: 1161px; top: 222px"
-        >
-          <div
-            class="flex items-center justify-center flex-1 h-full px-8 py-2.5 bg-gray-300 rounded-full"
-          >
-            <div
-              class="flex space-x-2.5 items-center justify-end flex-1 h-full"
-            >
-              <div
-                class="w-5 h-full bg-pink-900 bg-opacity-50 border-2 rounded-lg border-black"
-              />
-              <p class="text-base font-medium text-center">Add to watchlist</p>
-            </div>
+          class="bg-gray-400 h-full rounded-[20px] mb-14 hidden md:block overflow-hidden"
+          id="moviePoster"
+        ></div>
+
+        <div class="h-full flex flex-col justify-center">
+          <div class="flex gap-4 mb-8 flex-wrap" id="movieGenre"></div>
+          <p class="text-lg leading-5 font-medium mb-8" id="movieSynopsis">
+            Loading...
+          </p>
+          <div>
+            <p class="text-lg">IMDB Rating</p>
+            <p class="text-sm text" id="movieRating">Loading...</p>
           </div>
         </div>
       </div>
+      <div
+        class="mb-4 order-first md:order-last w-full min-h-fit"
+        id="movieTrailer"
+      >
+        Video
+      </div>
     </div>
+    <script src="moviepage.js"></script>
   </body>
 </html>
