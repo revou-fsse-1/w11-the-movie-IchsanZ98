@@ -1,8 +1,24 @@
-# Ichsan Zulfikar Week 11 Individual Assignment (Movie Website)
-## Pages 📖
+# Ichsan Zulfikar Week 11 Individual Project Assignment : Movie Website
+
+The assignment involves creating a website clone by following the provided UI design.:
+<https://www.figma.com/file/yCKKRAWIdhVVekSMjwJCGp/The-Movie-Tracker---TV-Shows-%26-Movies-Tracking-Web-App-(Community)?node-id=0%3A1&t=pAqo7yzxCTRAqIBo-1>
+
+Netlify's Domain: [Movie Website]()
+
 ---
-1. Login Screen
-2. Register Screen
-3. Movie page
-4. Movie page detail
-5. Watchlist Page
+## Detail page
+
+1. ✔️Login Screen
+2. ✔️Register Screen
+3. ✔️Movie page
+4. ✔️Movie page detail
+5. ✔️Watchlist Page
+
+✔️desktop size guide
+❌mobile size guide
+
+---
+
+
+
+
